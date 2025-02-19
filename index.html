@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <title>kanban</title>
+</head>
+<body>
+    <main class="kanban">
+        <!--## COLUNA  1 ##-->>
+        <div class="kanban-column" data-id="1">
+            <div class="kanban-title">
+                <h2>pendente</h2>
+                <button class="add-card" onclick="openTaskModal()">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="kanban-cards" draggable="true">
+                <div class="kanban-card">
+                    <div class="badge medium">
+                      <span>
+                        Alta prioridade
+                      </span>  
+                    </div>
+                    <p class="card-title">
+                        reevisar documento do projeto 
+                    </p>
+
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment">
+                                    1
+                                </i>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-paperclip">
+                                    1
+                                </i>
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/imagens/Captura de tela 2025-02-11 154403.png" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ## COLUNA 2 ##-->
+        <div class="kanban-column" data-id="2">
+            <div class="kanban-title">
+                <h2> Em Front-end</h2>
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge high">
+                      <span>
+                        Media prioridade
+                      </span>  
+                    </div>
+                    <p class="card-title">
+                        reevisar documento do projeto 
+                    </p>
+
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment">
+                                    1
+                                </i>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-paperclip">
+                                    1
+                                </i>
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/imagens/Captura de tela 2025-02-11 154403.png" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ## COLUNA 3 ## -->
+        <div class="kanban-column" data-id="3">
+            <div class="kanban-title">
+                <h2> Em back-end</h2>
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge low">
+                      <span>
+                        Baixa prioridade
+                      </span>  
+                    </div>
+                    <p class="card-title">
+                        reevisar documento do projeto 
+                    </p>
+
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment">
+                                    1
+                                </i>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-paperclip">
+                                    1
+                                </i>
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/imagens/Captura de tela 2025-02-11 154403.png" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--## COLUNA 4 ##-->
+        <div class="kanban-column" data-id="4">
+            <div class="kanban-title">
+                <h2> Em Teste </h2>
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge high">
+                      <span>
+                        Alta prioridade
+                      </span>  
+                    </div>
+                    <p class="card-title">
+                        reevisar documento do projeto 
+                    </p>
+
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment">
+                                    1
+                                </i>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-paperclip">
+                                    1
+                                </i>
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/imagens/Captura de tela 2025-02-11 154403.png" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ## COLUNA 5 ##-->
+        <div class="kanban-column" data-id="5">
+            <div class="kanban-title">
+                <h2> Concluido  </h2>
+                <button class="add-card">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+            </div>
+            <div class="kanban-cards">
+                <div class="kanban-card" draggable="true">
+                    <div class="badge high">
+                      <span>
+                        Alta prioridade
+                      </span>  
+                    </div>
+                    <p class="card-title">
+                        reevisar documento do projeto 
+                    </p>
+
+                    <div class="card-info">
+                        <div class="card-icons">
+                            <p>
+                                <i class="fa-regular fa-comment">
+                                    1
+                                </i>
+                            </p>
+
+                            <p>
+                                <i class="fa-solid fa-paperclip">
+                                    1
+                                </i>
+                            </p>
+                        </div>
+                        <div class="user">
+                            <img src="src/imagens/Captura de tela 2025-02-11 154403.png" alt="avatar">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   
+    <div id="taskModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeTaskModal()">&times;</span>
+            <h2>Nova Tarefa</h2>
+            <input type="text" id="taskTitle" placeholder="O que precisa ser feito?">
+            <select id="taskPriority">
+                <option value="high">Alta</option>
+                <option value="medium">Média</option>
+                <option value="low">Baixa</option>
+            </select>
+            <button onclick="addTask()">Adicionar</button>
+        </div>
+    </div>    
+
+    <script src="src/javascript/script.js"> </script>
+</body>
+</html>
